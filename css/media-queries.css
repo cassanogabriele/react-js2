@@ -1,0 +1,283 @@
+/* Media Queries du thème Ceevee */
+
+/* Largeur d'écran inférieure à 1024 pixels */
+@media only screen and (max-width: 1024px) {
+    /* header */
+	header .banner-text h1 {
+      font: 80px/1.1em 'opensans-bold', sans-serif;
+      letter-spacing: -1px;
+      margin: 0 auto 12px auto;	  
+    }
+   
+	#title-contact{ margin-top: 25px !important; }
+	
+	/* Banière */
+	.banner{ width: 25px !important; }
+	
+	/* Page d'accueil */
+	.text { width: 300px !important; }
+	
+	#title-home{ font-size: 14px !important; }
+	
+	#home-paragraph{
+		 font-size: 14px !important;
+	}
+
+    /* Page contact */
+	#title-contact{
+		width:350px !important;
+		font-size: 25px !important;
+		text-align: center !important;
+		margin-top : 105px !important;		
+	}
+	
+	#fields{ width: 220px !important; }
+	
+	.fields-form{
+		margin-left: -16px !important;
+		width: 230px !important;
+	}
+	
+	#message-input{ 
+		margin-left: -16px !important;
+		width: 245px !important;
+	}
+
+    /* Footer */
+	footer{
+		width:245px !important;
+	} 
+	
+	/* Copyright */
+    footer .copyright li:before { content: none; }
+    footer .copyright li { margin-right: 12px; }
+}
+
+/* Largeur d'écran inférieure à 900 pixels */
+@media only screen and (max-width: 900px) {
+    /* header */
+	header .banner { padding-bottom: 12px; }
+	
+	header .banner-text h1 {
+      font: 78px/1.1em 'opensans-bold', sans-serif;
+      letter-spacing: -1px;      
+	}
+	
+	header .banner-text h3 {
+		font: 17px/1.9em 'librebaskerville-regular', serif;
+		width: 80%;
+	}
+	
+	header .banner-text hr {
+      width: 65%;
+      margin: 12px auto;
+	}
+	
+	/* Navigation du site */
+	#nav-wrap {
+      font: 11px 'opensans-bold', sans-serif;
+      letter-spacing: 1.5px;
+	}
+
+	/* Page A propos */
+    #about .profile-pic {
+      width: 114px;
+      height: 114px;
+      margin-left: 12px;
+    }
+	
+	#about .contact-details { width: 50%; }
+	#about .download { width: 50%; }
+	
+	/* Page contact */
+	#title-contact{ margin-top: 25px !important; }
+	
+	/* Page contact */
+	#title-contact{
+		width:350px !important;
+		font-size: 25px !important;
+		text-align: center !important;
+		margin-top : 105px !important;		
+	}
+	
+	#fields{ width: 220px !important; }
+	
+	.fields-form{
+		margin-left: -16px !important;
+		width: 230px !important;
+	}
+	
+	#message-input{ 
+		margin-left: -16px !important;
+		width: 245px !important;
+	}
+
+    /* Footer */
+	footer{
+		width:245px !important;
+	} 
+	
+	/* Copyright */
+    footer .copyright li:before { content: none; }
+    footer .copyright li { margin-right: 12px; }
+}
+
+/* tablettes mobiles larges / plus petites */
+@media only screen and (max-width: 767px) {
+	/* Navigation mobile */
+	#nav-wrap {
+		font: 12px 'opensans-bold', sans-serif;
+		background: transparent !important;
+		letter-spacing: 1.5px;  
+		width: auto;
+		position: fixed;
+		top: 0;
+		right: 0;
+	}
+   
+    #nav-wrap > a {
+		width: 48px;
+		height: 48px;
+		text-align: left;
+		background-color: #CC5200;
+		position: relative;
+		border: none;
+		float: right;
+		font: 0/0 a;
+		text-shadow: none;
+		color: transparent;
+        position: relative;
+		top: 0px;
+		right: 30px;
+    }
+
+	#nav-wrap > a:before,
+	#nav-wrap > a:after {
+		position: absolute;
+		border: 2px solid #fff;
+		top: 35%;
+		left: 25%;
+		right: 25%;
+		content: '';
+	}
+	
+	#nav-wrap > a:after { top: 60%; }   
+
+	/* Masquer le panneau de menu  */
+	#nav-wrap ul#nav {
+		height: auto;
+		display: none;
+		clear: both;
+		width: auto; 
+		float: right;     
+        position: relative;
+		top: 12px;
+		right: 0;
+	}
+
+	/* display menu panels */
+	#nav-wrap:target > ul#nav	{
+	    display: block;
+	    padding: 30px 20px 48px 20px;
+		background: #1f2024;
+		margin: 0 30px;
+		clear: both;
+	}
+
+    ul#nav li {
+       display: block;
+       height: auto;      
+       margin: 0 auto; 
+       padding: 0 4%;           
+       text-align: left;
+       border-bottom: 1px solid #2D2E34;
+       border-bottom-style: dotted; 
+    }
+  
+    ul#nav li a {  
+		display: block;    
+		margin: 0;
+		padding: 0;      
+		margin: 12px 0; 
+		line-height: 16px; /* réinitialiser la hauteur de ligne à partir de 48px */
+		border: none;
+	}  
+	
+	/* Page d'accueil */
+	.text { width: 300px !important; }
+	
+	#title-home{ font-size: 14px !important; }
+	
+	#home-paragraph{
+		 font-size: 14px !important;
+	}
+	
+	/* Header */
+	header {
+	   position: relative;	 
+	   width: 100%;
+	   color:#FFFFFF;
+	   background: #161415 url(../images/header-background.jpg) no-repeat;	 
+	   text-align: center;
+	   overflow: hidden;
+	}
+	
+	header .banner {
+		padding-bottom: 12px;
+		padding-top: 6px;		
+	}
+	   
+	header .banner-text h1 { font: 68px/1.1em 'opensans-bold', sans-serif; }
+	
+	header .banner-text h3 {
+		font: 16px/1.9em 'librebaskerville-regular', serif;
+		width: 85%;
+	}
+
+	header .banner-text hr {
+		width: 80%;
+		margin: 18px auto;
+	}
+
+	/* Page A propos  */
+	#about .profile-pic { display: none; }
+	
+	#about .download .button {
+      width: 50%;
+      text-align: center;
+      padding: 15px 20px;
+	}
+	
+	.paragraphs{ width: 250px !important; }
+	
+	#about .main-col { padding-right: 30px; }
+	
+	/* Page contact */
+	#title-contact{
+		width:350px !important;
+		font-size: 25px !important;
+		text-align: center !important;
+		margin-top : 105px !important;		
+	}
+	
+	#fields{ width: 220px !important; }
+	
+	.fields-form{
+		margin-left: -16px !important;
+		width: 230px !important;
+	}
+	
+	#message-input{ 
+		margin-left: -16px !important;
+		width: 245px !important;
+	}
+
+    /* Footer */
+	footer{
+		width:245px !important;
+	} 
+	
+	/* Copyright */
+    footer .copyright li:before { content: none; }
+    footer .copyright li { margin-right: 12px; }
+}
